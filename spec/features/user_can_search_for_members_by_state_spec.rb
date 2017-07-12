@@ -13,7 +13,7 @@ RSpec.feature 'User can search by state' do
     select "Colorado"
     click_on "Locate Members of the House"
 
-    expect(current_path).to eq search_path(state:"CO")
+    expect(current_path).to eq search_path
     expect(page).to have_content "7 Results"
     expect(page).to have_css('.member', count: 7)
     # And they should be ordered by seniority from most to least
