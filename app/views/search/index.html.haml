@@ -1,9 +1,13 @@
-%p= "#{@results.count} Results"
+.container
+  %p= "#{@results.count} Results"
 
-%ul.members
-  - @results.each do |member|
-    %li.member
-      %p.name= member["name"]
-      %p.role= member["role"]
-      %p.party= member["party"]
-      %p.district= member["district"]
+  %ul.members
+    - @results.each do |member|
+      %li.member.col-md-4
+        %p.name= member["name"]
+        %p.role
+          = member["role"]
+          = ", "
+          %span.party= member["party"]
+        %p.district= "District: #{member["district"]}"
+        %p.senority= "Seniority: #{member["seniority"]}"

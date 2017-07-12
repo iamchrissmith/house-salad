@@ -18,5 +18,4 @@ class PropublicaService
 
   private
     attr_reader :attrs, :conn
-
 end
