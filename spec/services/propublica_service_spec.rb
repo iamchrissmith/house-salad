@@ -26,7 +26,8 @@ RSpec.describe "ProPublica Service API" do
       expect(result_first).to have_key "seniority"
       expect(result_first["seniority"]).to be_a String
 
-      expect(result_first["seniority"].to_i).to be >= result_last["seniority"].to_i
+      seniorities = results.map{ |r| r["seniority"].to_i}
+      expect(seniorities).to match(seniorities.sort.reverse)
     end
   end
 end
