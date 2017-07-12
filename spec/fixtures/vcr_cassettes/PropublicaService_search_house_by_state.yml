@@ -27,9 +27,9 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Wed, 12 Jul 2017 16:58:09 GMT
+      - Wed, 12 Jul 2017 17:03:37 GMT
       X-Amzn-Requestid:
-      - 486defa9-6723-11e7-85c3-6b9b96b5b1f6
+      - 0ba89306-6724-11e7-be12-cb3248a166b4
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Headers:
@@ -37,13 +37,13 @@ http_interactions:
       Access-Control-Allow-Methods:
       - GET,OPTIONS
       X-Amzn-Trace-Id:
-      - Root=1-59665521-b8a1c0ec3d97e11e6238b79e
+      - Root=1-59665669-d7874cbc78cbb01395862c2e
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 decb6b15ad2b3df28abe4e298c687a03.cloudfront.net (CloudFront)
+      - 1.1 fc412f6e036718e541af7e2359d6c94b.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - UZrtjMlt7ecMTp10ypVCll6lL_WptdG0zv1l7hN-ObEXoNSlApdc5Q==
+      - e_TPmsobl_myxnpdS8HVxGDtwkmD0BqlbITLDn4rp8sIf7xecZqeKw==
     body:
       encoding: UTF-8
       string: |
@@ -151,5 +151,5 @@ http_interactions:
               }
         ]}
     http_version: 
-  recorded_at: Wed, 12 Jul 2017 16:58:09 GMT
+  recorded_at: Wed, 12 Jul 2017 17:03:37 GMT
 recorded_with: VCR 3.0.3
