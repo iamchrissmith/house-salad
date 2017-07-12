@@ -1,0 +1,9 @@
+%p= "#{@results.count} Results"
+
+%ul.members
+  - @results.each do |member|
+    %li.member
+      %p.name= member["name"]
+      %p.role= member["role"]
+      %p.party= member["party"]
+      %p.district= member["district"]

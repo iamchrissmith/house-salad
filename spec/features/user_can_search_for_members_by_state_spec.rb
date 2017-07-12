@@ -18,9 +18,11 @@ RSpec.feature 'User can search by state' do
     expect(page).to have_css('.member', count: 7)
     # And they should be ordered by seniority from most to least
     # And I should see a name, role, party, and district for each member
-    expect(page).to have_css('.member:first_child .name')
-    expect(page).to have_css('.member:first_child .role')
-    expect(page).to have_css('.member:first_child .party')
-    expect(page).to have_css('.member:first_child .district')
+    members = page.all(".member")
+    expect(members.count).to eq 7
+    expect(members[0]).to have_css('.name')
+    expect(members[0]).to have_css('.role')
+    expect(members[0]).to have_css('.party')
+    expect(members[0]).to have_css('.district')
   end
 end
